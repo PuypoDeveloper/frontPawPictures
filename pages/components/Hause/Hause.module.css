@@ -1,0 +1,251 @@
+.main { 
+    background-color: rgb(0, 0, 0);
+    margin-top: 0.1em;
+    height: 92vh;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-content: center;
+    align-items:end;
+    gap: 1em;
+    z-index: -1 !important;
+}
+
+/*ESTILOS CATS*/
+.imageCat { 
+    height: 80vh;
+    display: flex;
+    max-width: 30em;
+}
+/*ESTILOS INFORMATION*/
+.information { 
+    color: white;
+    height: 100%;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 2em;
+    margin-bottom: 2;
+
+}
+.ctnInformation { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90vw;
+
+}
+.textInformation { 
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+.textInformation h1 { 
+    font-weight: 700;
+  font-size: 6rem;
+  background-image: linear-gradient(70deg, 
+    rgb(64, 224, 208), 
+    rgb(255, 140, 0), 
+    rgb(255, 0, 128), 
+    rgb(64, 224, 208), 
+    rgb(255, 140, 0), 
+    rgb(255, 0, 128));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: myanimation 5s linear infinite alternate;
+  position: relative;
+  text-align: center;
+}
+.textInformation h1::before { 
+    content: attr(data-text);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  font-weight: 700;
+  font-size: 6rem;
+  background-image: linear-gradient(70deg, rgb(64, 224, 208), rgb(255, 140, 0), rgb(255, 0, 128), rgb(64, 224, 208), rgb(255, 140, 0), rgb(255, 0, 128));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: myanimation 100s linear infinite alternate;
+  filter: blur(32px);
+}
+@keyframes myanimation {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+.textInformation p { 
+    font-size: 19px;
+}
+.btnGetStarted { 
+    flex-grow: 2;
+    padding: 1em;
+    width: 15em;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnGetStarted p { 
+    margin: auto;
+    font-weight: 600;
+} 
+.ctnbtnGetStarted { 
+    display: flex;
+    width: 20em;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+/*ESTILOS DOGS*/
+
+.carousel { 
+    padding: 1em;
+    overflow: hidden !important
+
+}
+.ctnFixed { 
+    transform-style: preserve-3d 
+}
+.ctnMove { 
+    background-color: black;
+    display: flex;
+    gap: 1em;
+    width: 107em;
+    transform-style: preserve-3d;
+    padding-bottom: 1em;
+}
+.ctnMove img { 
+    width: 17em;
+    height: 17em;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+
+    }
+
+/*LOG ING*/
+.LogIn { 
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*STYLES BTN*/
+
+.btnGeneretedOf,
+.btnGetStartedOf { 
+    display: none;
+}
+
+.btnGeneretedOn{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18em;
+    height: 7em;
+    flex-grow: 2;
+    padding: 1em;
+}
+
+.ctnLinkBtn { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/*RESPONSIVE*/
+
+@media(max-width: 870px) { 
+    .information { 
+        padding: 3em;
+    }
+    .textInformation h1 { 
+        font-size: clamp(50px, 60px, 70px);
+    }
+    .textInformation h3 { 
+        font-size: clamp(20px, 30px, 30px);
+    }
+}
+@media(max-width: 680px) { 
+    .ctnMove img { 
+        width: 10em;
+        height: 10em;
+    }
+}
+@media(max-width: 480px) { 
+    .textInformation h1 { 
+        font-size: clamp(35px, 50px, 60px);
+    }
+    .textInformation h3 { 
+        font-size: clamp(10px, 20px, 30px);
+    }
+    .ctnbtnGetStarted { 
+        width: 12em;
+        padding: 0;
+    }
+}
+@media(max-width: 410px) { 
+    .textInformation h1 { 
+        font-size: clamp(30px, 40px, 50px);
+    }
+    .btnGeneretedOn{ 
+        width: 12em;
+        height: 5em;
+        padding: 0;
+    }
+    .textInformation p { 
+        font-size: clamp(8px, 15px, 25px);
+    }
+}
+@media(max-width: 340px) { 
+    .btnGetStarted { 
+        padding: 0;
+        height: 5em;
+        width: 12em;
+    }
+}
+@media(max-width: 305px) { 
+    .btnGetStarted,
+    .btnGeneretedOn { 
+        padding: 0;
+        height: 5em;
+        width: 10em;
+    }
+    .textInformation h1 { 
+        font-size: clamp(20px, 30px, 40px);
+    }
+
+}
+@media (max-height: 860px) { 
+    .ctnMove img { 
+        width: 13em;
+        height: 13em;
+    }
+}
+@media (max-height: 720px) { 
+    .ctnMove img { 
+        width: 10em;
+        height: 10em;
+    }
+}
