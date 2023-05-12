@@ -76,7 +76,7 @@ export default function VisualUserC() {
     );
 
     const configuration = new Configuration({
-        apiKey: "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",
+        apiKey: "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",
       });
  
 
@@ -170,7 +170,7 @@ useEffect(()=> {
                     <img src="./img/imagesGenereted/7.png" alt="" />
                     <img src="./img/imagesGenereted/8.png" alt="" />
                     { 
-                        addNewImage.map((img,index)=> (
+                        addNewImage.map((img: any,index)=> (
                             <img key={index} src={img.url} />
                         ))
                     }
@@ -203,11 +203,11 @@ useEffect(()=> {
                                                 </>
                             ) : (
                                 <>
-                                {result.length > 0 ? (
+                                {result ? (
                                     <img className={styles.result_image} src={result} alt="result" />
-                                ) : (
-                                    <></>
-                                )}
+                                    ) : (
+                                 <></>
+                                    )}
                                 </>
                             )}
                         </div>
