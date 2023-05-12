@@ -7,7 +7,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import ArrowDropDownRoundedIcon from '@mui/icons-material/ArrowDropDownRounded';
 import HandlingSatus from '../filesLogin/handlingSatus';
 import Link from 'next/link';
-import { counterCountext } from '../../context/counterContext';
+import  counterCountext  from '../../context/counterContext';
 import {useRouter} from 'next/router'; 
 
 const fredoka = Fredoka({ subsets: ["latin"], 

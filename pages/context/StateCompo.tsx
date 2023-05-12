@@ -1,5 +1,5 @@
 import React, { Children, useState } from 'react'
-import {counterCountext} from "./counterContext"
+import counterCountext from "./counterContext"
 
 export default function StateCompo({children}:{ children: React.ReactNode }) { 
 

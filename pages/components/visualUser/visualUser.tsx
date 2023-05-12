@@ -4,7 +4,7 @@ import ReplayIcon from '@mui/icons-material/Replay';
 import dataDescription from "./description.json"
 import { Configuration, OpenAIApi } from "openai";
 import Image from 'next/image';
-import { counterCountext } from '../../context/counterContext';
+import counterCountext from '../../context/counterContext';
 import { headers } from 'next/dist/client/components/headers';
 import { error } from 'console';
 import BtnHome from '../Elements/Buttons/BtnHome';

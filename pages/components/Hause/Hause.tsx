@@ -4,7 +4,7 @@ import data from "./Hause.json"
 import { Inter,Fredoka } from '@next/font/google'
 import HandlingSatus from '../filesLogin/handlingSatus'
 import useUserState from '../hooks/stateUser'
-import { counterCountext } from '../../context/counterContext'
+import counterCountext from '../../context/counterContext'
 import classNames from 'classnames';
 import Link from 'next/link'
 import gsap from "gsap"

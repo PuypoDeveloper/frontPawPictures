@@ -1,7 +1,7 @@
 import { func, object } from "prop-types"
 import { createContext } from "react"
 
-export const counterCountext = createContext({ 
+const counterCountext = createContext({ 
     stateUser: false,
     userInt: () => {},
     userOut:()=>{},
@@ -11,3 +11,5 @@ export const counterCountext = createContext({
     ChangeEmail: (email:string)=>{}
 
 })
+
+export default counterCountext

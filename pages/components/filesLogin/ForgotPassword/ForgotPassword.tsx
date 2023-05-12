@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "../Login/logIng.module.css"
 import stylesThree from "./ForgotPassword.module.css"
 import stylesTwo from "../general.module.css"
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import BtnHome from '../../Elements/Buttons/BtnHome';
 import ArrowBack from '../../Elements/ArrowBack/ArrowBack';
 
