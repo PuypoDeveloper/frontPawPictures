@@ -23,7 +23,7 @@ export default function VisualUserC() {
     
      useEffect(()=> { 
          dataDescription.userId = JSON.parse(email) 
-         const url = "http://localhost:4000/images/SEND"
+         const url = "https://pawpicture.fly.dev/images/SEND"
     const formData = dataDescription
     fetch(url,{ 
         method: "POST",
@@ -76,7 +76,7 @@ export default function VisualUserC() {
     );
 
     const configuration = new Configuration({
-        apiKey: "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",
+        apiKey: "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",
       });
  
 
@@ -104,7 +104,7 @@ const saveImage = () => {
         dataDescription.prompt = prompt
         dataDescription.url = result
         const formData = dataDescription
-        const url = "http://localhost:4000/images/URL"
+        const url = "https://pawpicture.fly.dev/images/URL"
         fetch(url, { 
             method:"POST",
             body: JSON.stringify(formData),
